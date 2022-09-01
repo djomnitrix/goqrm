@@ -65,4 +65,21 @@ func main() {
 }
 
 ```
-list of methods available 
+## list of methods available 
+
+`Select()`
+
+for selecting columns if not used `*` will be used
+
+```go
+Select("column1","column2","column3")
+```
+`Where()`
+for where condition you can chain multiple Where confition like below
+```go
+Where("firstname","=","john").Where("email","=","abc@example.com")
+```
+
+
+
+
